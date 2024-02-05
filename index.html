@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Statistics Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <div class="background-gray">
+      <header>
+        <nav class="navbar">
+          <a class="logo" href="#">COVID-19<span>.</span></a>
+          <ul class="menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#confirmed-cases">Confirmed Cases</a></li>
+            <li><a href="#death-rate">Death</a></li>
+            <li><a href="#recovered-cases">Recovered</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero-section">
+        <div id="home" class="content">
+          <h2>Coronavirus disease 2019</h2>
+          <p>
+              COVID-19 (coronavirus disease 2019) is a disease caused by a virus named SARS-CoV-2. It can be very contagious and spreads quickly.
+              Over one million people have died from COVID-19 in the United States
+          </p>
+        </div>
+      </section>
+      <section class="hero-section">
+        <div id="confirmed-cases" class="content">
+            <h3>Total Confirmed Cases</h3>
+            <canvas id="bar-chart-confirmed-cases" style="width: 50%; height: 100px;"></canvas>
+        </div>
+      </section>
+      <section class="hero-section">
+        <div id="death-rate" class="content">
+            <h3>Death Rates by Country</h3>
+          <canvas id="scatter-chart-death-rate" style="width: 50%; height: 50px;"></canvas>
+        </div>
+      </section>
+      <section class="hero-section">
+        <div id="recovered-cases" class="content">
+          <h3>Total Recovered Cases</h3>
+          <canvas id="line-chart-recovered-cases" style="width: 50%; height: 100px;"></canvas>
+        </div>
+      </section>
+      
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+    </script>
+  </body>
+</html>
