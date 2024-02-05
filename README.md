@@ -1,8 +1,8 @@
-# Web Worker
+# COVID-19 Statistics Dashboard with Web Worker
 
 ## Overview
 
-This project utilizes a web worker to perform background tasks, enhancing the overall performance and responsiveness of the web application. Web workers allow for parallel execution of scripts in the background, separate from the main thread, preventing UI freezes during resource-intensive tasks.
+This project utilizes a web worker to enhance performance by fetching COVID-19 data in the background, preventing UI freezes during data retrieval. The dashboard provides graphical representations of the statistics.
 
 ## Usage
 
@@ -25,6 +25,7 @@ The main application is located in the `index.html` file. This file contains the
 ### Running the Application
 
 Simply open the `index.html` file in your web browser. You should see the application in action, with the web worker performing tasks seamlessly in the background.
+
 ----
 
 Happy Coding!
